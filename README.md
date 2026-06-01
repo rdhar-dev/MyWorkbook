@@ -151,4 +151,3 @@ Before running the application:
 
 **Rose Dhar**
 
-Laravel Developer
