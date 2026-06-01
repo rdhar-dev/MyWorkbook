@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('my_workbooks', function (Blueprint $table) {
+        Schema::create('myworkbook', function (Blueprint $table) {
             $table->id(); // ✅ auto increment ID
 
             $table->string('reference');
