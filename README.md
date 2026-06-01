@@ -170,6 +170,7 @@ Edit Apache Virtual Hosts
 ```
 * Restart Apache.
 * Open: http://myworkbook.local
+* Open: http://myworkbook.local/myworkbook/create
 
 ---
 ## Author
