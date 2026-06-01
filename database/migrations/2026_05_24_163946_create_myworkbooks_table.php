@@ -9,7 +9,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('myworkbook', function (Blueprint $table) {
-            $table->id(); // ✅ auto increment ID
+            $table->id();
 
             $table->string('reference');
             $table->string('task_name');
