@@ -147,6 +147,31 @@ Before running the application:
 
 ---
 
+## To run Laravel through Apache instead of php artisan serve
+
+Configure Apache Virtual Host
+* Edit Hosts File
+* Open: C:\Windows\System32\drivers\etc\hosts
+* Add: 127.0.0.1 myworkbook.local
+  
+Edit Apache Virtual Hosts
+* File: C:\xampp\apache\conf\extra\httpd-vhosts.conf
+* Add:
+```bash
+<VirtualHost *:80>
+    ServerName myworkbook.local
+    DocumentRoot "C:/xampp/htdocs/MyWorkbook/public"
+
+    <Directory "C:/xampp/htdocs/MyWorkbook/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
+* Restart Apache.
+* Open: http://myworkbook.local
+
+---
 ## Author
 
 **Rose Dhar**
